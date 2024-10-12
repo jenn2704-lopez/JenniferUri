@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Cake Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center">
+            
+            <!-- Nombre de la página -->
+            <div>
+              <h1>Cake Shops</h1>
+            </div>
+    
+            <!-- Barra de búsqueda marrón -->
+            <div class="d-flex">
+              <input class="form-control me-2 search-bar" type="search" placeholder="Buscar pasteles..." aria-label="Buscar">
+              <button class="btn btn-outline-light" style="background-color: #8B4513;" type="submit">Buscar</button>
+            </div>
+    
+            <!-- Enlace para iniciar sesión con animación -->
+            <div>
+              <a href="login.html" class="btn btn-login">Iniciar Sesión</a>
+            </div>
+    
+          </div>
+        </div>
+      </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <br><br>
+
+    <section class="fondo2">
+        <div >
+            <h2>Contáctanos</h2>
+        </div>
+    </section>
+
+    <div class="container mt-5 about">
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Información de Contacto</h4>
+                <p><strong>Teléfono:</strong> +51 902 586 562</p>
+                <p><strong>Correo Electrónico:</strong>cakeshop@gmail.com</p>
+                <p><strong>Dirección:</strong> Calle 123, Santiago de Surco</p>
+                <p><strong>Horario:</strong> Lunes a Sábado, 9:00 AM - 6:00 PM</p>
+                <p><strong>WhatsApp:</strong> <a href="https://wa.me/+123456789" target="_blank">+51 902 586 562</a></p>
+            </div>
+            <div class="col-md-6">
+                <h4>Formulario de Contacto</h4>
+                <form>
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Introduce tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="Introduce tu correo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" class="form-control" id="telefono" placeholder="Introduce tu número de teléfono" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="motivo">Motivo del Contacto</label>
+                        <select class="form-control" id="motivo" required>
+                            <option value="">Seleccione un motivo</option>
+                            <option value="consulta">Consulta</option>
+                            <option value="pedido">Pedido</option>
+                            <option value="queja">Queja</option>
+                            <option value="sugerencia">Sugerencia</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="suscripcion">
+                        <label class="form-check-label" for="suscripcion">Quiero suscribirme al boletín informativo</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Mapa -->
+        <h4 class="mt-5">Nuestra Ubicación</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7801.009397490796!2d-76.987807!3d-12.146004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b814b3d5464d%3A0xfa5b81ad056d16a6!2sInstituto%20SISE%20-%20Santiago%20de%20Surco!5e0!3m2!1ses!2spe!4v1728103052455!5m2!1ses!2spe" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <!-- Preguntas Frecuentes -->
+        <h4 class="mt-5">Preguntas Frecuentes</h4>
+        <div class="accordion" id="faqAccordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ¿Cuáles son los métodos de pago aceptados?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Aceptamos tarjetas de crédito, débito y pagos en efectivo.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿Hacéis entregas a domicilio?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Sí, ofrecemos entregas a domicilio dentro de la ciudad. Consulta las tarifas en el área de pedidos.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            ¿Se pueden personalizar las tortas?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Sí, todas nuestras tortas pueden ser personalizadas según tus deseos. Contáctanos para más detalles.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de Testimonios -->
+        <h4 class="mt-5">Testimonios de Nuestros Clientes</h4>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-center mb-4">
+                    <div class="card-body">
+                        <p class="card-text">"Las tortas de Cake Shop son simplemente deliciosas! ¡Mis invitados quedaron impresionados!"</p>
+                        <footer class="blockquote-footer">Ana Pérez</footer>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center mb-4">
+                    <div class="card-body">
+                        <p class="card-text">"Excelente servicio y un sabor increíble. Definitivamente volveré!"</p>
+                        <footer class="blockquote-footer">Juan Gómez</footer>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center mb-4">
+                    <div class="card-body">
+                        <p class="card-text">"Recomiendo Cake Shop a todos mis amigos. ¡No se van a arrepentir!"</p>
+                        <footer class="blockquote-footer">María López</footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section legal-links">
+                <ul>
+                  <li><a href="terminosCondiciones.html">Términos y Condiciones</a></li>
+                  <li><a href="politicaPrivacida.html">Políticas de Privacidad</a></li>
+                  <li><a href="reclamaciones.html">Libro de Reclamaciones</a></li>
+                  <li><a href="Transparencia.html">Portal de Transparencia</a></li>
+                </ul>
+            </div>
+          <div class="footer-column">
+            <div class="footer-section payment-methods">
+              <h4> <b>Métodos de Pago</b></h4>
+              <img src="imagenes/visa.png" alt="Visa" class="payment-icon">
+              <img src="imagenes/mastercard.png" alt="MasterCard" class="payment-icon">
+              <img src="imagenes/bcp.png" alt="BCP" class="payment-icon">
+              <img src="imagenes/yape.jpg" alt="yape-plin" class="payment-icon">
+            </div>
+            <div class="footer-section social-media">
+              <h4><b>Síguenos en Redes Sociales</b></h4>
+              <ul class="social-icons">
+                <li><a href="https://www.facebook.com/"><img src="imagenes/facebook.webp" alt="Facebook"></a></li>
+                <li><a href="https://x.com/"><img src="imagenes/twitter.png" alt="Twitter"></a></li>
+                <li><a href="https://www.instagram.com/"><img src="imagenes/instagram.png" alt="Instagram"></a></li>
+                <li><a href="https://www.tiktok.com/explore?lang=es"><img src="imagenes/Tik-Tok.png" alt="Tiktok"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-section social-media">
+            <h4><b>Contáctanos en WhatsApp</b></h4>
+            <ul class="social-icons">
+              <li><a href="https://web.whatsapp.com/"><img src="imagenes/whatsapp.png" alt="WhatsApp">+51 902 586 562</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Cake Shops. Todos los derechos reservados.</p>
+        </div>
+      </footer>     
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
